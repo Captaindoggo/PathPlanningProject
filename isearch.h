@@ -47,7 +47,7 @@ class ISearch
         virtual double computeHFromCellToCell(int start_i, int start_j, int fin_i, int fin_j, const EnvironmentOptions &options) {return 0;}
         virtual std::list<Node> findSuccessors(Node curNode, const Map &map, const EnvironmentOptions &options);
         void makePrimaryPath(Node curNode);//Makes path using back pointers
-        virtual void addOpen(Node newnd);
+        virtual void addOpen(const Node &newnd);
         //void makeSecondaryPath();//Makes another type of path(sections or points)
         //Node resetParent(Node current, Node parent, const Map &map, const EnvironmentOptions &options) {return current;}//need for Theta*
 
