@@ -66,7 +66,7 @@ SearchResult ISearch::startSearch(ILogger *Logger, const Map &map, const Environ
         current = open[0];
         open.pop_front();
         close.insert({current.i * map.getMapWidth() + current.j, current});
-        std::cout << "current:" << current.i - goal.first << ' ' << current.j - goal.second << '\n';
+        //std::cout << "current:" << current.i - goal.first << ' ' << current.j - goal.second << '\n';
 
         if(current.i == goal.first && current.j == goal.second) {
             found = true;
