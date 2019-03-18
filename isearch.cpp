@@ -78,8 +78,9 @@ SearchResult ISearch::startSearch(ILogger *Logger, const Map &map, const Environ
                 }
             }
         }
+        Logger->writeToLogOpenClose(open, close, false);
     }
-
+    Logger->writeToLogOpenClose(open, close, true);
     if (found) {
 
         sresult.pathfound = true;

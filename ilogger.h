@@ -12,7 +12,7 @@ class ILogger
         virtual bool getLog(const char* FileName, const std::string* LogParams) = 0;
         virtual void saveLog() = 0;
         virtual void writeToLogMap(const Map& map, const std::list<Node>& path) = 0;
-        //virtual void writeToLogOpenClose(const typename &open, const typename &close) = 0;
+        virtual void writeToLogOpenClose(std::unordered_map<int, Node> &open, std::unordered_map<int, Node> &close, bool last) = 0;
         virtual void writeToLogPath(const std::list<Node>& path) = 0;
         virtual void writeToLogHPpath(const std::list<Node>& path) = 0;
         virtual void writeToLogNotFound() = 0;
