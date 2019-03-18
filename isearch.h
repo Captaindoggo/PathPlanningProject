@@ -49,7 +49,7 @@ class ISearch
         void makePrimaryPath(const Node &curNode);//Makes path using back pointers
         virtual void addOpen(Node newnd, const Map &map);
         void makeSecondaryPath();//Makes another type of path(sections or points)
-        Node updateVertex(Node current, Node parent, const Map &map, const EnvironmentOptions &options) {return current;}//need for Theta*
+        virtual Node updateVertex(Node current, Node parent, const Map &map, const EnvironmentOptions &options) {return current;}//need for Theta*
 
         SearchResult                    sresult;
         std::list<Node>                 lppath, hppath;
