@@ -9,6 +9,7 @@
 #include "environmentoptions.h"
 #include "astar.h"
 #include "dijkstra.h"
+#include "theta.h"
 #include "xmllogger.h"
 
 //That's the wrap up class that first creates all the needed objects (Map, Search etc.)
